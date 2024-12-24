@@ -1,0 +1,74 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto active ">
+
+                <li class="nav-item" style="margin-top:-12px;">
+                    <a class="nav-link " routerLink="data-binding">Data Binding</a>
+                </li>
+
+                <li class="nav-item" style="margin-top:-12px;">
+                    <a class="nav-link" routerLink="structral-dir">structral Directive</a>
+                </li>
+                <li class="nav-item" style="margin-top:-12px;">
+                    <a class="nav-link" routerLink="attribute-dir">Attribute Directive</a>
+                </li>
+                <li class="nav-item" style="margin-top:-12px;">
+                    <a class="nav-link " routerLink="controlFlow">Control Flow</a>
+                </li>
+                <li class="nav-item" style="margin-top:-12px;">
+                    <a class="nav-link " routerLink="pipe">pipe</a>
+                </li>
+                <li class="nav-item" style="margin-top:-12px;">
+                    <a class="nav-link  " routerLink="forms">forms</a>
+                </li>
+                <li class="nav-item" style="margin-top:-12px;">
+                    <a class="nav-link  " routerLink="pforms">pforms</a>
+                </li>
+                <li class="nav-item" style="margin-top:-12px;">
+                    <a class="nav-link " routerLink="Rforms">Rforms</a>
+                </li>
+                <li class="nav-item" style="margin-top:-12px;">
+                    <a class="nav-link   " routerLink="get-api">get-api</a>
+                </li>
+                <li class="nav-item" style="margin-top:-12px;">
+                    <a class="nav-link   " routerLink="put-api">putApi</a>
+                </li>
+                <li class="nav-item" style="margin-top:-12px;">
+                    <a class="nav-link  " routerLink="employment">Query</a>
+                </li>
+                <li class="nav-item" style="margin-top:-12px;">
+                    <a class="nav-link " routerLink="childDept">ChildDept</a>
+                </li>
+                <li class="nav-item" style="margin-top:-12px;">
+                    <a class="nav-link " routerLink="prty-booking">Prty-Booking</a>
+                </li>
+                <li class="nav-item" style="margin-top:-12px;">
+                    <a class="nav-link " routerLink="lifecycleE">lifecycleE</a>
+                </li>
+
+
+
+
+            </ul>
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="text-white text-center mr-2"> <span style="font: 400;">Welcome </span> <span
+                        class="text-white text-center mr-2">
+                        {{loggedDataUser.emailId }} !</span></div>
+
+
+
+                <button class="btn btn-primary" type="button">Search</button>
+
+                <button class="btn btn-danger mx-1" type="button" (click)="logOut()">LogOut</button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<router-outlet></router-outlet>

@@ -1,0 +1,27 @@
+<app-alert [message]="'welcome to get-api'"></app-alert>
+
+
+<div class="row">
+    <div class="col-4">
+        <button class="btn btn-primary mx-4" (click)="getAllUser()"> get user</button>
+        <button class="btn btn-primary" (click)="getAllCustomer()">get customer</button>
+
+
+    </div>
+    <div class="col-4">
+        <select name="form-select">
+            @for (item of userlist; track $index) {
+            <option>{{item.name}}</option>
+            }
+
+        </select>
+    </div>
+    <div class="col-4">
+        <select name="form-select">
+            @for (item of customerlist; track $index) {
+            <option>{{item.fullName}}</option>
+            }
+
+        </select>
+    </div>
+</div>

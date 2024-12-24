@@ -1,0 +1,46 @@
+<p>data-binding works!</p>
+<div class="row">
+    <div class="col-4">
+        one way form .ts to .html
+    </div>
+    <div class="col-4"></div>
+    <div class="col-4"></div>
+</div>
+<div class="row ">
+    <div class="col-4">
+        interpolation
+        <div class="row">
+            <div class="col-3 bg-success">
+                <h4>{{courseName}}</h4>
+                <input type="text" value="{{courseName}}" placeholder="enter text">
+                <input type="{{inputType}}">
+
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        property data-binding
+        <input type="text" [value]="courseName">
+        <button class="btn btn-success" (click)="showAlert('welcome angular-18')">click me</button>
+        <button class=" bg-danger mx-2" (click)="changeCourseName()">name change </button>
+    </div>
+    <div class="col-4">
+        <input type="text" [(ngModel)]="courseName"> {{courseName}}
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-4">
+        <select [(ngModel)]="stateName">
+            <option value="">select</option>
+            <option value="">parsa</option>
+            <option value="">chitwan</option>
+            <option value="">kathmandu</option>
+        </select>
+
+    </div>
+    <div class="col-4">
+        <h2>{{firstName()}}</h2>
+    </div>
+    <div class="col-4"></div>
+</div>
